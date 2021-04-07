@@ -1,6 +1,6 @@
 <?php
 
-$recipient = "matthews@matthewsloper.com";
+$recipient = "contact@matthewsloper.com";
 $visitor_email = "";
 $visitor_name = "";
 $msg = "";
