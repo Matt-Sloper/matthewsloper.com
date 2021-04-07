@@ -1,6 +1,6 @@
 <?php
 
-$recipient = "matthew.sloper@gmail.com";
+$recipient = "matthews@matthewsloper.com";
 $visitor_email = "";
 $visitor_name = "";
 $msg = "";
@@ -36,7 +36,7 @@ if($_POST) {
         echo "<h1>Thank you for contacting me, $visitor_name. You will get a reply within 24 hours.</h1>";
         return(0);
     } else {
-        echo '<h1>We are sorry but the email did not go through.</h1>';
+        echo '<h1>Sorry but the email did not go through.</h1>';
         return(-1);
     }
 
