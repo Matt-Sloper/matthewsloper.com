@@ -41,6 +41,7 @@ ul {
 html {
   font-size: 100%;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,6 +74,20 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    padding: 0.1rem;
+    position: fixed;
+    top: 0;
+    color: #ffffff;
+    background: #8fb8f5;
+    background: #3d5e79;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d5e79), to(#6085a3));
+    background: linear-gradient(#3d5e79, #6085a3);
+    z-index: 999;
+  }
 }
 
 .logo {
@@ -175,6 +190,7 @@ nav li a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .hero-image-wrap {
@@ -200,7 +216,7 @@ nav li a:focus {
             transform: rotate(0.5deg);
     max-width: 900px;
     width: 70vw;
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
@@ -322,6 +338,104 @@ nav li a:focus {
   }
 }
 
+/* about page
+================= */
+#about {
+  width: 100vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1b364e;
+  background: #FAFAFA;
+  padding-top: 4rem;
+}
+
+#about h1 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+#about .card {
+  width: 100%;
+  height: auto;
+  padding: 2em 3.8em;
+}
+
+#about .card .img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+}
+
+#about .card h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#about .card p {
+  font-size: 1em;
+  margin-top: 0.5em;
+  line-height: 1.4em;
+}
+
+#about .card p .strikethru {
+  text-decoration: line-through;
+}
+
+#about .card br {
+  line-height: 1em;
+}
+
+#about img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 688px) {
+  .cards {
+    max-width: 700px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #about {
+    height: 100vh;
+  }
+  #about h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  #about .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    place-content: space-around;
+    max-width: unset !important;
+  }
+  #about .card {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    font-size: 1.1rem;
+    padding: 1em 3em;
+  }
+  #about .card p {
+    line-height: 1.7em;
+  }
+}
+
 /* contact page 
 ================= */
 .contact-wrap {
@@ -336,7 +450,7 @@ nav li a:focus {
 /* desktop layout */
 @media screen and (min-width: 992px) {
   .contact-wrap {
-    margin-top: 2rem;
+    margin-top: 3.3rem;
   }
 }
 
@@ -421,12 +535,6 @@ nav li a:focus {
   width: 24px;
   height: 24px;
   margin: 0 0.8em;
-}
-
-/* about page
-================= */
-#about {
-  display: none;
 }
 
 /* resume page
