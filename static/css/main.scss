@@ -74,6 +74,10 @@ header {
         background: #3d5e79;
         background: linear-gradient(#3d5e79, #6085a3);
         z-index: 999;
+
+        // use vendor prefix for pre-iOS9.0 browsers
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
     }
 }
 
