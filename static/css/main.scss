@@ -78,6 +78,7 @@ header {
         // use vendor prefix for pre-iOS9.0 browsers
         display: -webkit-flex;
         -webkit-justify-content: space-between;
+        justify-content: space-between;
     }
 }
 
@@ -366,14 +367,14 @@ nav li a {
     }
 
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 
     #about {
 
         height: 100vh;
 
         h1 {
-            margin-top: 2rem;
+            margin-top: 0.8rem;
             margin-bottom: 1rem;
         }
         

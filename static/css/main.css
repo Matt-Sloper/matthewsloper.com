@@ -87,6 +87,10 @@ header {
     background: -webkit-gradient(linear, left top, left bottom, from(#3d5e79), to(#6085a3));
     background: linear-gradient(#3d5e79, #6085a3);
     z-index: 999;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -406,12 +410,12 @@ nav li a:focus {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   #about {
     height: 100vh;
   }
   #about h1 {
-    margin-top: 2rem;
+    margin-top: 0.8rem;
     margin-bottom: 1rem;
   }
   #about .cards {
