@@ -156,7 +156,10 @@ nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    place-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
   }
 }
 
@@ -514,7 +517,8 @@ nav li a:focus {
 
 .social-wrap {
   width: 60vw;
-  padding: 0.3rem 0.3rem 1.8rem 0.3rem;
+  height: auto;
+  padding: 0.3rem 0.3rem 0 0.3rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,21 +588,10 @@ nav li a:focus {
 footer {
   color: #000000;
   font-size: 0.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 1em;
   opacity: 0.8;
+  float: right;
+  padding: 0 1rem;
 }
 
 /* to do
